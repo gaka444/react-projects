@@ -7,11 +7,18 @@ import CountReact from './components/CountReact';
 import IdleTimerContainer from './components/IdleTimerContainer';
 import ColorPicker from './components/ColorPicker';
 import DatePickerContainer from './components/DatePickerContainer';
+import Player from './components/Player';
+import Loading from './components/Loading';
+import LineChart from './components/LineChart';
+import BarChart from './components/Barchart';
+import DoughnutChart from './components/DoughnutChart';
 
 function App() {
   return (
       <div className="App">
-        <DatePickerContainer/>
+        {/* <LineChart/> */}
+        {/* <BarChart /> */}
+        <DoughnutChart />
       </div>
   );
 }
