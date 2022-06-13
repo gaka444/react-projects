@@ -2,7 +2,7 @@ import './rightbar.css';
 import { Users } from '../../dummyData';
 import Online from '../online/Online';
 
-function Rightbar(props) {
+function Rightbar({profile}) {
     const HomeRightbar = () => {
         return (
             <>
@@ -67,7 +67,7 @@ function Rightbar(props) {
     return (
         <div className='rightbar'>
             <div className='rightbarWrapper'>
-                <ProfileRightBar/>
+                {profile ? <ProfileRightBar/> : <HomeRightbar/>}
             </div>
         </div>
     );
